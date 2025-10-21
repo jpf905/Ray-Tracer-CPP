@@ -1,5 +1,7 @@
 ##  **C++ Ray Tracer — *Physically Inspired Rendering from Scratch**
-"https://github.com/jpf905/Ray-Tracer-CPP/blob/main/images/output.png"
+
+(https://github.com/jpf905/Ray-Tracer-CPP/blob/main/images/output.png)
+
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![Eigen](https://img.shields.io/badge/Math-Eigen-orange.svg)](https://eigen.tuxfamily.org)
 [![OpenMP](https://img.shields.io/badge/Parallel-OpenMP-green.svg)](https://www.openmp.org/)
