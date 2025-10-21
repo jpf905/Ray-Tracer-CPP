@@ -1,0 +1,1 @@
+/usr/bin/c++  -mmacosx-version-min=12.7 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/raytracer.dir/src/main.cpp.o -o raytracer  -Wl,-rpath,/opt/anaconda3/envs/raytracer/lib /opt/anaconda3/envs/raytracer/lib/libomp.dylib

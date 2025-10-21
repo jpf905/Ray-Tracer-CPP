@@ -1,0 +1,3 @@
+/Users/JohnSilvana/Documents/DATA SCIENCE/DS-Projects/raytracer/build/CMakeFiles/raytracer.dir
+/Users/JohnSilvana/Documents/DATA SCIENCE/DS-Projects/raytracer/build/CMakeFiles/edit_cache.dir
+/Users/JohnSilvana/Documents/DATA SCIENCE/DS-Projects/raytracer/build/CMakeFiles/rebuild_cache.dir

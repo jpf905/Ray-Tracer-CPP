@@ -1,0 +1,11 @@
+name: raytracer-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cmake
+  - make
+  - clang  # macOS compiler 
+  - imagemagick  # optional, for converting .ppm -> .png
+  - python=3.12  # optional if you want Python handy
+  - eigen        # for vector/matrix math 
