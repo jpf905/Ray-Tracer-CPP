@@ -29,11 +29,17 @@ Rendered images are generated from first principles — simulating rays of light
 ---
 
 ### **Technical Notes**
-**Concept**			**Description**
-Ray equation		P(t) = origin + t * direction
-Intersection		Solves quadratic for sphere-ray hits
-Reflection			R = V - 2(V·N)N
-Refraction			Uses Snell’s Law + Schlick approximation
-Anti-aliasing		Random supersampling per pixel
-Gamma correction	√color to simulate human brightness 					perception
-Parallelism			OpenMP #pragma omp parallel for loops 					over scanlines
+<table>
+	<tr>
+		<td width="50%" valign="top">
+			
+			### 📐 Technical Notes
+			| Concept | Description |
+			|----------|-------------|
+			| **Ray equation** | `P(t) = origin + t * direction` |
+			| **Intersection** | Solves quadratic for sphere-ray hits |
+			| **Reflection** | `R = V - 2(V·N)N` |
+			| **Refraction** | Uses Snell’s Law + Schlick approximation |
+			| **Anti-aliasing** | Random supersampling per pixel |
+			| **Gamma correction** | √color for realistic brightness |
+			| **Parallelism** | OpenMP `#pragma omp parallel for` |
