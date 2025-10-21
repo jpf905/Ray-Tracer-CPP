@@ -33,7 +33,7 @@ Rendered images are generated from first principles — simulating rays of light
 	<tr>
 		<td width="50%" valign="top">
 			
-			### 📐 Technical Notes
+			
 			| Concept | Description |
 			|----------|-------------|
 			| **Ray equation** | `P(t) = origin + t * direction` |
@@ -43,3 +43,6 @@ Rendered images are generated from first principles — simulating rays of light
 			| **Anti-aliasing** | Random supersampling per pixel |
 			| **Gamma correction** | √color for realistic brightness |
 			| **Parallelism** | OpenMP `#pragma omp parallel for` |
+			
+		</td>
+		<td width="50%" valign="top">
