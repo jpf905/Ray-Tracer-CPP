@@ -1,5 +1,5 @@
 ##  **C++ Ray Tracer — *Physically Inspired Rendering from Scratch**
-
+"https://github.com/jpf905/Ray-Tracer-CPP/blob/main/images/output.png"
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![Eigen](https://img.shields.io/badge/Math-Eigen-orange.svg)](https://eigen.tuxfamily.org)
 [![OpenMP](https://img.shields.io/badge/Parallel-OpenMP-green.svg)](https://www.openmp.org/)
@@ -26,3 +26,12 @@ Rendered images are generated from first principles — simulating rays of light
 
 ---
 
+### **Technical Notes**
+**Concept**			**Description**
+Ray equation		P(t) = origin + t * direction
+Intersection		Solves quadratic for sphere-ray hits
+Reflection			R = V - 2(V·N)N
+Refraction			Uses Snell’s Law + Schlick approximation
+Anti-aliasing		Random supersampling per pixel
+Gamma correction	√color to simulate human brightness 					perception
+Parallelism			OpenMP #pragma omp parallel for loops 					over scanlines
