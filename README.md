@@ -1,4 +1,4 @@
-##  **C++ Ray Tracer — *Physically Inspired Rendering from Scratch**
+##  **C++ Ray Tracer — Physically Inspired Rendering from Scratch**
 
 ![Rendered Photo](https://github.com/jpf905/Ray-Tracer-CPP/blob/main/images/output.png)
 
