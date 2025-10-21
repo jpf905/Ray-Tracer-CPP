@@ -29,44 +29,19 @@ Rendered images are generated from first principles — simulating rays of light
 ---
 
 ### **Technical Notes**
-<table>
-	<tr>
-		<td style="width:50%; vertical-align: top; padding-right: 12px;">
-			
-			<h3>📐 Technical Notes</h3>
-			<ul>
-				<li><b>Ray equation:</b> <code>P(t) = origin + t × direction</code></li>
-				<li><b>Intersection:</b> quadratic solution for sphere–ray hits</li>
-				<li><b>Reflection:</b> <code>R = V − 2(V·N)N</code></li>
-				<li><b>Refraction:</b> Snell’s Law + Schlick approximation</li>
-				<li><b>Anti-aliasing:</b> random supersampling per pixel</li>
-				<li><b>Gamma:</b> sqrt(color) for perceptual brightness</li>
-				<li><b>Parallelism:</b> OpenMP over scanlines</li>
-			</ul>
-			
-		</td>
-		<td style="width:50%; vertical-align: top; padding-left: 12px;">
-			
-			<h3>⚙️ Build &amp; Run</h3>
-			<ol>
-				<li>Create environment:
-					<pre><code>conda env create -f environment.yml
-						conda activate raytracer-env</code></pre>
-				</li>
-				<li>Build:
-					<pre><code>mkdir build &amp;&amp; cd build
-						cmake ..
-						cmake --build . -j</code></pre>
-				</li>
-				<li>Render:
-					<pre><code>./raytracer</code></pre>
-				</li>
-				<li>View:
-					<pre><code>magick ../images/output.ppm ../images/output.png
-						open ../images/output.png</code></pre>
-				</li>
-			</ol>
-			
-		</td>
-	</tr>
-</table>
+
+| Concept | Description |
+|----------|-------------|
+| **Ray equation** | `P(t) = origin + t × direction` |
+| **Intersection** | Quadratic solution for sphere–ray hits |
+| **Reflection** | `R = V − 2(V·N)N` |
+| **Refraction** | Snell’s Law + Schlick approximation |
+| **Anti-aliasing** | Random supersampling per pixel |
+| **Gamma correction** | √color for perceptual brightness |
+| **Parallelism** | OpenMP `#pragma omp parallel for` over scanlines |
+| **Math backend** | [Eigen](https://eigen.tuxfamily.org) for fast vector ops |
+
+---
+
+### **Summary**
+This project implements a fully functional ray tracer in modern C++, capable of simulating realistic light behavior through reflection, refraction, and diffuse scattering. By tracing the paths of individual rays as they interact with virtual objects, it generates high-quality rendered images based on physical principles of optics. The program demonstrates advanced geometric computation, recursive algorithms, and linear algebra, leveraging Eigen for efficient vector math and OpenMP for multi-core parallel rendering. It serves as both a learning tool for computer graphics fundamentals and a showcase of high-performance C++ design.
